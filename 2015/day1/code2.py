@@ -6,9 +6,9 @@ with open('input.txt', 'r') as file:
         inputs.append(line.strip())
 
 
-for input in inputs:
+for val in inputs:
     res = 0
-    for i, val in enumerate(input):
+    for i, val in enumerate(val):
         if val == "(":
             res += 1
         elif val == ")":

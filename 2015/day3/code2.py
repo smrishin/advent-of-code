@@ -5,7 +5,7 @@ with open('input.txt', 'r') as file:
         # print(line.strip())
         inputs.append(line.strip())
 
-for input in inputs:
+for val in inputs:
     x = 0
     y = 0
     rx = 0
@@ -20,17 +20,17 @@ for input in inputs:
     }
 
     i = 0
-    while i < len(input):
-        x += directions.get(input[i], (0,0))[0]
-        y += directions.get(input[i], (0,0))[1]
+    while i < len(val):
+        x += directions.get(val[i], (0,0))[0]
+        y += directions.get(val[i], (0,0))[1]
         visited.add((x,y))
         i += 1
 
-        if i >= len(input):
+        if i >= len(val):
             break
 
-        rx += directions.get(input[i], (0,0))[0]
-        ry += directions.get(input[i], (0,0))[1]
+        rx += directions.get(val[i], (0,0))[0]
+        ry += directions.get(val[i], (0,0))[1]
         visited.add((rx,ry))
         i += 1
 

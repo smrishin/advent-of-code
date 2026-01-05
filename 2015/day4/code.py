@@ -5,10 +5,10 @@ testinput = ['abcdef', 'pqrstuv']
 
 inputs = realinput
 
-for input in inputs:
+for val in inputs:
     i = 1
     while True:
-        key = input + str(i)
+        key = val + str(i)
         md5_hash = hashlib.md5(key.encode('utf-8'))
         hex_d = md5_hash.hexdigest()
         # if hex_d[:5] == "00000": # Solution for part 1

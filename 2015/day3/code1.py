@@ -5,7 +5,7 @@ with open('input.txt', 'r') as file:
         # print(line.strip())
         inputs.append(line.strip())
 
-for input in inputs:
+for val in inputs:
     x = 0
     y = 0
     visited = {(x,y)}
@@ -17,7 +17,7 @@ for input in inputs:
         "<": (-1,0)
     }
 
-    for dir in input:
+    for dir in val:
         x += directions.get(dir, (0,0))[0]
         y += directions.get(dir, (0,0))[1]
         visited.add((x,y))

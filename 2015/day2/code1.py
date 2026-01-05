@@ -6,8 +6,8 @@ with open('input.txt', 'r') as file:
         inputs.append(line.strip())
 
 total = 0
-for input in inputs:
-    l, w, h = list(map(int, input.split("x")))
+for val in inputs:
+    l, w, h = list(map(int, val.split("x")))
 
     a = l * w
     b = w * h
